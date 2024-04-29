@@ -1,6 +1,6 @@
 # Welcome vapper-formdata
 ### What do you often do when creating an api to create an entity with upload a file?
-- Call an upload api first? grab the file url? submit it along with the post entity api? If so this package is not for user :D
+- Call an upload api first? grab the file url? submit it along with the post entity api? If so this package is not for you :D
 - Create a formdata api to allow submitting files and data at a time then this package is for you. However, that always upload file even the sending data is not valid. One normal way is removing the file whenever the api got something wrong that cannot create the entity.
 ### This package will help you validate the data, all logics first to make sure they are all fine to start uploading file.
 Please note that the package now only support s3Storage which will stream files directly to s3 or digitalocean spaces.
