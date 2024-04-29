@@ -25,7 +25,7 @@ const s3Storage = {
     }),
 };
 
-// Create your validator
+// Define your validator
 const creatorCreationValidator = celebrate({
   body: joi()
   .object()
@@ -62,10 +62,9 @@ router.route('/creators/create').post(
 );
 
 // Start your controller
-
 function createCreatorController(req, res, next) {
   try {
-    // Check any logics before create the creator to db
+    // Check any logics before creating the creator to db
     // ...
     // Call upload task to upload file to s3
     const uploadResponse = await req.executeUpload();
