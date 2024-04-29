@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/cedricVu/formdata-validate/issues"
   },
+  "engines": {
+    "node": "^16"
+  },
   "homepage": "https://github.com/cedricVu/formdata-validate#readme",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.564.0",
