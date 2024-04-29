@@ -4,7 +4,7 @@
 - Create a formdata api to allow submitting files and data at a time then this package is for you. However, that always upload file even the sending data is not valid. One normal way is removing the file whenever the api got something wrong that cannot create the entity.
 ### This package will help you validate the data, all logics first to make sure they are all fine to start uploading file.
 Please note that the package now only support s3Storage which will stream files directly to s3 or digitalocean spaces.
-
+Feel free to upgrade this package to have more type of storage, ex: localStorage which allow store file locally
 # Usage - example in express
 
 ```
