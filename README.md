@@ -30,9 +30,9 @@ const creatorCreationValidator = celebrate({
   body: joi()
   .object()
   .keys({
-    nickName: this.Joi().string().trim().max(100).required(),
-    fullName: this.Joi().string().trim().max(100).required(),
-    files: this.Joi()
+    nickName: joi().string().trim().max(100).required(),
+    fullName: joi().string().trim().max(100).required(),
+    files: joi()
       .array()
       .max(20)
       .custom((value, helper) => {
