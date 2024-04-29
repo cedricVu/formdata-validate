@@ -4,7 +4,7 @@
 - Create a formdata api to allow submitting files and data at a time then this package is for you. However, that always upload file even the sending data is not valid. One normal way is removing the file whenever the api got something wrong that cannot create the entity.
 ### This package will help you validate the data, all logics first to make sure they are all fine to start uploading file.
 Please note that the package now only support s3Storage which will stream files directly to s3 or digitalocean spaces.
-t
+
 # Usage - example in express
 
 ```
@@ -25,7 +25,7 @@ const s3Storage = {
     }),
 };
 
-// Create your validator
+// Define your validator
 const creatorCreationValidator = celebrate({
   body: joi()
   .object()
@@ -62,10 +62,9 @@ router.route('/creators/create').post(
 );
 
 // Start your controller
-
 function createCreatorController(req, res, next) {
   try {
-    // Check any logics before create the creator to db
+    // Check any logics before creating the creator to db
     // ...
     // Call upload task to upload file to s3
     const uploadResponse = await req.executeUpload();
