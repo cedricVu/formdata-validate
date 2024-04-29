@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cedricVu/formdata-validate.git"
+    "url": "git+https://github.com/cedricVu/vapper-formdata.git"
   },
   "author": "cedricvu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cedricVu/formdata-validate/issues"
+    "url": "https://github.com/cedricVu/vapper-formdata/issues"
   },
   "engines": {
     "node": ">=16.20.1"
   },
-  "homepage": "https://github.com/cedricVu/formdata-validate#readme",
+  "homepage": "https://github.com/cedricVu/vapper-formdata#readme",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.564.0",
     "express-form-data": "^2.0.23",
