@@ -1,5 +1,5 @@
 {
-  "name": "vaper-formdata",
+  "name": "vapper-formdata",
   "version": "1.0.0",
   "description": "Using any validator to validate data from formdata sending to server before executing upload progress",
   "main": "index.js",
