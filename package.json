@@ -16,7 +16,7 @@
     "url": "https://github.com/cedricVu/formdata-validate/issues"
   },
   "engines": {
-    "node": "^16"
+    "node": ">=16.20.1"
   },
   "homepage": "https://github.com/cedricVu/formdata-validate#readme",
   "dependencies": {
