@@ -34,14 +34,15 @@ module.exports = function ({ validator, doS3Config }) {
                 if (req.body.files.some(item => !(item instanceof stream.Readable))) {
                     return next(Error('no files to upload'));
                 }
-            } else {
-                return next(Error('no files to upload'));
             }
 
             return next();
         },
         validator,
         function (req, res, next) {
+            if (!req.body || !req.body.files) {
+                return next();
+            }
             req.executeUpload = () => {
                 return Promise.all(
                     req.body.files.map(async (item) => {
